@@ -55,8 +55,36 @@
     </section>
 
     <section class="qjs" id="qjs">
+        <div class="profil reveal">
+          <img src="../images/logo.jpg">
+        </div>
+        <div class="description reveal">
+          <p>Étudiant en deuxième année de <strong>BUT Informatique</strong>
+            <strong>à l’IUT de Montpellier</strong>, je suis passionné par l’informatique depuis un long moment. 
+            
+            J'ai commencé mes premiers bouts de codes lors de mes années au collège, où j'ai tenté, tant bien que mal, de créer mes premiers petits jeux-vidéos <strong>2D</strong> grâce au <strong>C#</strong> et à Unity3D.
+            
+            C'est donc tout naturellement qu'au lycée, j'ai choisi les spécialités Mathématiques et Informatique, puis l'orientation en BUT Informatique par la suite.</p>
+        </div>
 
     </section>
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+      
+      function reveal(){
+        let reveals = document.querySelectorAll('.reveal');
+
+        for(let i=0; i<reveals.length; i++){
+          let windowHeight = window.innerHeight;
+          let revealTop = reveals[i].getBoundingClientRect().top;
+          let revealPoint = 150;
+
+          if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+          }
+        }
+      }
+    </script>
     <!--
     <nav>
         <div class="gch-nav">

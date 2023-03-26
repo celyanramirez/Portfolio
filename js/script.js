@@ -13,5 +13,6 @@ function onScroll() {
   });
 }
 
+
 // attache la fonction de scroll à l'événement "scroll"
 window.addEventListener('scroll', onScroll);

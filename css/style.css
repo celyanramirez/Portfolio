@@ -214,8 +214,55 @@ html{
 }
 
 .qjs{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    height: 100vh;
+  }
+  
+  .profil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .description{
+    text-align: justify;
+    width: 50%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .qjs{
+      flex-direction: column;
+      height: auto;
+    }
+    .profil, .description{
+      margin-right: 0;
+    }
+    .profil img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+.reveal{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 /* Barre de navigation */
