@@ -30,6 +30,7 @@ html{
     color: white;
 }
 
+
 .circle {
     display: inline-block;
     width: 50px;
@@ -54,22 +55,26 @@ html{
     text-size-adjust: auto;
 }
 
-.nav-link{
-    font-size:25px;
-    margin-left:40px;
-    display: flex;
-}
-
-.navbar-brand{
+.navbar-nav {
+    flex-direction: row;
+  }
+  
+.navbar-nav > li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+.nav-link {
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  
+.navbar-brand {
     width: 300px;
     height: 100%;
-}
-
-.test{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
+    justify-content: right;
+  }
 
 @media screen and (max-width: 1596px){
     .nav-link{
@@ -142,7 +147,7 @@ html{
 }
 
 .accueil-txt{
-    font-size: 64px;
+    font-size: 5rem;
     color:white;
     font-weight: bold;
     opacity: 80%;
@@ -154,7 +159,7 @@ html{
 }
 
 .accueil-btxt{
-    font-size: 128px;
+    font-size: 8rem;
     color:white;
     font-weight: bold;
     opacity: 80%;
@@ -165,7 +170,7 @@ html{
 }
 
 .accueil-desc{
-    font-size: 36px;
+    font-size: 2rem;
     color:white;
     font-weight: bold;
     opacity: 80%;
@@ -184,34 +189,33 @@ html{
     margin-top: -250px;
 }
 
-@media screen and (max-width:1293px) and (max-height: 661px){
-    .accueil-txt{
-        font-size: 44px;
-        padding-top: 200px;
-        margin-left:120px;
-        margin-bottom: -10px;
+@media screen and (max-width: 800px) {
+    .accueil-txt {
+      font-size: 3rem;
     }
     
-    .accueil-btxt{
-        font-size: 108px;
-        color:white;
-        font-weight: bold;
-        opacity: 80%;
-        display: flex;
-        margin-left:100px;
-        margin-top: 0;
+    .accueil-btxt {
+      font-size: 6rem;
     }
     
-    .accueil-desc{
-        font-size: 16px;
-        color:white;
-        font-weight: bold;
-        opacity: 80%;
-        display: flex;
-        margin-left:120px;
-        margin-top: -20px;
+    .accueil-desc {
+      font-size: 1.5rem;
     }
-}
+  }
+  
+  @media screen and (max-width: 576px) {
+    .accueil-txt {
+      font-size: 2rem;
+    }
+    
+    .accueil-btxt {
+      font-size: 5rem;
+    }
+    
+    .accueil-desc {
+      font-size: 1rem;
+    }
+  }
 
 .qjs{
     display: flex;
