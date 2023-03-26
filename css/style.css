@@ -187,6 +187,11 @@ html{
     float:right;
     margin-right: 150px;
     margin-top: -250px;
+    z-index: -1;
+}
+
+.linkedinclass{
+    z-index: 2;
 }
 
 @media screen and (max-width: 800px) {
