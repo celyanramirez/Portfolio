@@ -2,8 +2,10 @@ const backgroundImg = document.querySelector('.accueil');
 const textElements = document.querySelectorAll('.accueil-txt, .accueil-btxt, .accueil-desc, .linkedin');
 backgroundImg.style.background = 'url("../images/fond.png")';
 backgroundImg.onload = () => {
+  // Une fois que l'image est chargée, ajoute un listener pour détecter le scroll
   window.addEventListener('scroll', onScroll);
 };
+
 
 function onScroll() {
   // calcule la position de scroll actuelle
