@@ -255,6 +255,9 @@ html{
 
 
 .parcours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   color: white;
   font-size: 20px;
@@ -267,6 +270,33 @@ html{
   background-size: cover;
 }
 
+
+.left {
+  flex-basis: 50vw;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 50%;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  text-align: center;
+}
+
+.left h3, .right h3 {
+  font-size: 1.5vw;
+}
+
+.left h4, .right h4 {
+  font-size: 1vw;
+}
 
 @media only screen and (max-width: 768px) {
   .qjs{
