@@ -1,10 +1,14 @@
 const backgroundImg = document.querySelector('.accueil');
 const textElements = document.querySelectorAll('.accueil-txt, .accueil-btxt, .accueil-desc, .linkedin');
+backgroundImg.style.background = 'url("../images/fond.png")';
+backgroundImg.onload = () => {
+  window.addEventListener('scroll', onScroll);
+};
 
-// fonction qui sera appelée à chaque fois que l'utilisateur scrollera sur la page
 function onScroll() {
   // calcule la position de scroll actuelle
   const scrollPosition = window.pageYOffset;
+  //console.log(scrollPosition)
 
   // déplace l'image de fond et les textes selon la position de scroll
   backgroundImg.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
@@ -27,6 +31,7 @@ function reveal(){
     }
   }
 }
+
 
 
 // attache la fonction de scroll à l'événement "scroll"
