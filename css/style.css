@@ -261,21 +261,66 @@ html{
   position: relative;
   color: white;
   font-size: 20px;
-  height: 100vh;
   z-index: 5;
 }
 
 .parcours-bg {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-image: url("../images/fond2.png");
-  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid orangered;
 }
 
 
@@ -289,6 +334,18 @@ html{
   text-align: center;
 }
 
+.left-2{
+  flex-basis: 50vw;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  transform: translateY(-50%);
+  width: 60%;
+  text-align: center;
+  background-position: center;
+}
+
+
 .right {
   position: absolute;
   right: 0;
@@ -299,12 +356,38 @@ html{
 }
 
 .left h3, .right h3 {
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .left h4, .right h4 {
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
+
+.competences{
+  margin: 200px;
+  text-align: center;
+}
+.galerie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1300px;
+  margin: 70px auto 0;
+  /* background: crimson; */
+}
+.item {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 @media only screen and (max-width: 768px) {
