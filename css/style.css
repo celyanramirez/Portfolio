@@ -253,6 +253,11 @@ html{
   width: 50%;
 }
 
+.mp h1{
+  text-align: center;
+  margin: 50px;
+}
+
 
 .parcours {
   display: flex;
@@ -388,6 +393,11 @@ html{
   height: auto;
 }
 
+.projets{
+  margin: 200px;
+  text-align: center;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -405,13 +415,13 @@ html{
 }
 
 .reveal{
-  transform: translateY(100px);
+  transform: translateX(-100px);
   opacity: 0;
   transition: all 2s ease;
 }
 
 .reveal.active{
-  transform: translateY(0px);
+  transform: translateX(0px);
   opacity: 1;
 }
 
