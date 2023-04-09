@@ -109,6 +109,53 @@ p{
   font-size: 20px;
 }
 
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul.social-media li {
+  display: block;
+  margin-right: 10px;
+}
+
+footer ul.social-media li a i {
+  font-size: 24px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
 
 @media screen and (max-width: 768px) {
   .project {
