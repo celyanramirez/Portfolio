@@ -6,9 +6,9 @@ backgroundImg.onload = () => {
   window.addEventListener('scroll', onScroll);
 };
 const messageDescription = document.getElementById("desc");
-const msg1 = ["Étudiant en deuxième année de <strong>BUT Informatique</strong><strong> à l’IUT de Montpellier</strong>, je suis passionné par l’informatique depuis un long moment. J'ai commencé mes premiers bouts de codes lors de mes années au collège, où j'ai tenté, tant bien que mal, de créer mes premiers petits jeux-vidéos <strong>2D</strong> grâce au <strong>C#</strong> et à Unity3D.C'est donc tout naturellement qu'au lycée, j'ai choisi les spécialités Mathématiques et Informatique, puis l'orientation en BUT Informatique par la suite."]
+const msg1 = ["Étudiant en deuxième année de <strong>BUT Informatique</strong><strong> à l’IUT de Montpellier</strong>, je suis passionné par l’informatique depuis un long moment. J'ai commencé mes premiers bouts de codes lors de mes années au collège, où j'ai tenté, tant bien que mal, de créer mes premiers petits jeux-vidéos <strong>2D</strong> grâce au <strong>C#</strong> et à Unity3D. C'est donc tout naturellement qu'au lycée, j'ai choisi les spécialités Mathématiques et Informatique, puis l'orientation en BUT Informatique par la suite."]
 let textPosition = 0;
-const speed = 0.01;
+const speed = 0.1;
 
 typeWriter = () => {
   messageDescription.innerHTML = msg1[0].substring(0, textPosition) + "<span>\u25ae</span>";
@@ -32,7 +32,7 @@ function onScroll() {
 
       
 function reveal(){
-  let reveals = document.querySelectorAll('.reveal');
+  let reveals = document.querySelectorAll('.reveal'); 
 
   for(let i=0; i<reveals.length; i++){
     let windowHeight = window.innerHeight;

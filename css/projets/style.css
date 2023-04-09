@@ -92,6 +92,7 @@ html {
 
 .project-img img {
   max-width: 80%;
+  border-radius: 5%;
 }
 
 .project-text {
@@ -105,6 +106,7 @@ html {
 
 p{
   color: white;
+  font-size: 20px;
 }
 
 
