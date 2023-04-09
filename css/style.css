@@ -418,7 +418,8 @@ span{
 }
 
 .divContact{
-  background-color: grey;
+  background-color: white;
+  opacity: 80%;
   border-radius: 5%;
   width: 75%;
   height: 45%;
