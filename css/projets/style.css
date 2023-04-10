@@ -27,6 +27,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.soon{
+  padding-bottom: 500px;
+  letter-spacing: 50px;
+}
+
+
 .navbar-nav {
   flex-direction: row;
 }
