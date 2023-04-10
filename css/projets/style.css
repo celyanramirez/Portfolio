@@ -19,6 +19,10 @@ h2 {
   clear:both;
 }
 
+li{
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
