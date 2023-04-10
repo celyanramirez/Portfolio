@@ -27,6 +27,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.github{
+  padding: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.divgit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .soon{
   padding-bottom: 500px;
   letter-spacing: 50px;

@@ -511,4 +511,35 @@ footer a:hover {
   opacity: 1;
 }
 
+
+.reveal2{
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.reveal3{
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.reveal4{
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.reveal5{
+  transform: rotate(360deg);
+  opacity: 0;
+}
+
+.reveal6{
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.reveal7{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
 /* Barre de navigation */
