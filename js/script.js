@@ -45,6 +45,23 @@ function reveal(){
   }
 }
 
+function upscale(img) {
+  var overlay = document.createElement("div");
+  overlay.id = "overlay";
+  document.body.appendChild(overlay);
+
+  var imgOverlay = document.createElement("img");
+  imgOverlay.src = img.src;
+  imgOverlay.id = "img-overlay";
+  imgOverlay.style.cursor = "pointer";
+  overlay.appendChild(imgOverlay);
+
+  //ferme l'image
+  imgOverlay.onclick = function() {
+    document.body.removeChild(overlay);
+  };
+}
+
 
 
 // attache la fonction de scroll à l'événement "scroll"
