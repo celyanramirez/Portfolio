@@ -31,9 +31,17 @@ html {
   padding: 50px;
 }
 
+.textFinal{
+  padding: 50px;
+  margin-right:25%;
+  margin-left:25%;
+}
+
 a{
   text-decoration: none;
 }
+
+
 
 
 .divgit{

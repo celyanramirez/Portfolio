@@ -57,7 +57,7 @@
 
   <section class="qjs" id="qjs">
       <div class="profil reveal">
-        <img src="../images/logo.jpg">
+        <img src="../images/pdp.png">
       </div>
       <div class="description reveal reveal4">
         <p id="desc">
@@ -71,7 +71,7 @@
     <div class="mp reveal">
       <h1>Vidéo de présentation</h1>
     </div>
-    <video width="800" height="400" controls>
+    <video width="800" height="400" controls poster="../images/fond.png">
       <source src="../images/video.mp4" type=video/mp4>
     </video>
   </section>
@@ -79,7 +79,7 @@
   <div class="mp reveal">
     <h1>Mon parcours</h1>
   </div>
-  <section class="parcours reveal" id="parcours">
+  <section class="parcours" id="parcours">
     <div class="parcours-bg"></div>
     <div class="timeline">
       <div class="outer">
@@ -101,6 +101,7 @@
 
   <section class="competences" id="competences">
     <h1 class="reveal">Mes Compétences</h1>
+    <h2 class="reveal"> Informatique/Développement </h2>
     <div class="galerie">
   
       <div class="item reveal"><img src="../images/competences/html.png" alt="HTML5"></div>
@@ -112,6 +113,17 @@
       <div class="item reveal reveal2"><img src="../images/competences/php.png"></div>
       <div class="item reveal reveal6"><img src="../images/competences/python.png"></div>
       <div class="item reveal reveal7"><img src="../images/competences/sql.png"></div>
+      <div class="item reveal reveal8"><img src="../images/competences/vue.png"></div>
+      <div class="item reveal reveal4"><img src="../images/competences/laravel.png"></div>
+  
+    </div>
+
+    <h2 class="reveal" style="margin-top:100px;"> Hors Informatique/Développement </h2>
+    <div class="galerie">
+  
+      <div class="item reveal"><img src="../images/competences/camtasia.png" alt="Camtasia Studio" title="Camtasia Studio"></div>
+      <div class="item reveal reveal2"><img src="../images/competences/pro.png" alt="Adobe Premiere Pro" title="Adobe Premiere Pro"></div>
+      <div class="item reveal reveal3"><img src="../images/competences/photoshop.png" alt="Photoshop" title="Photoshop"></div>
   
     </div>
       
@@ -124,23 +136,23 @@
     <h2>Projets de cours</h2>
     <div class="galerie">
 
-      <div class="item reveal">
-        <a href="projets/koalarock.html">
+      <div class="item reveal" >
+        <a href="projets/koalarock.html" data-projet="KoalaRock">
           <img src="../images/projets/koala.png">
         </a>
       </div>
       <div class="item reveal">
-        <a href="projets/ecommerce.html">
+        <a href="projets/ecommerce.html" data-projet="Site E-Commerce">
           <img src="../images/projets/car.png">
         </a>
       </div>
       <div class="item reveal">
-        <a href="projets/mediatheque.html">
+        <a href="projets/mediatheque.html" data-projet="Médiathèque">
           <img src="../images/projets/books.png">
         </a>
       </div>
       <div class="item reveal">
-        <a href="projets/pgi.html">
+        <a href="projets/pgi.html" data-projet="PGI">
           <img src="../images/projets/graph.png">
         </a>
       </div>
@@ -149,17 +161,17 @@
     <h2>Projets personnels</h2>
     <div class="galerie">
       <div class="item reveal reveal4">
-        <a href="projets/hylia.html">
+        <a href="projets/hylia.html" data-projet="Bot Discord">
           <img src="../images/projets/HYLIA.png">
         </a>
       </div>
       <div class="item reveal reveal4">
-        <a href="projets/pendu.html">
+        <a href="projets/pendu.html" data-projet="Jeu Pendu">
           <img src="../images/projets/pendulogo.png">
         </a>
       </div>
       <div class="item reveal reveal4">
-        <a href="projets/MWA.html">
+        <a href="projets/MWA.html" data-projet="WIP">
           <img src="../images/projets/mwa.png">
         </a>
       </div>
@@ -168,7 +180,21 @@
     
   </section>
 
-  <section class="contact reveal reveal7" id="contact">
+  <section class="experiences" id="experiences">
+    <h1>Mes Expériences Professionnelles</h1>
+
+    <h2>Stage & Alternance</h2>
+    <div class="galerie">
+      <div class="item reveal">
+        <a href="experiences/vogo.html" data-projet="VOGO">
+          <img src="../images/experience/vogo.png">
+        </a>
+      </div>
+  </div>
+    
+  </section>
+
+  <section class="contact" id="contact">
     <div class="divContact">
       <div class="meContacter">
         <h1>Me Contacter</h1>
@@ -208,7 +234,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <p>&copy; 2023 Célyan Ramirez. Tous droits réservés.</p>
+          <p>&copy; 2024 Célyan Ramirez. Tous droits réservés.</p>
         </div>
       </div>
     </div>
