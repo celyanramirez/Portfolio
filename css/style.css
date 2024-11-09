@@ -180,7 +180,7 @@ h1{
 }
 
 .accueil-txt{
-  font-size: 5rem;
+  font-size: 3rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
@@ -192,18 +192,18 @@ h1{
 }
 
 .accueil-btxt{
-  font-size: 8rem;
+  font-size: 5rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
   display: flex;
-  margin-left:100px;
+  margin-left:110px;
   margin-top: 0;
   text-size-adjust: auto;
 }
 
 .accueil-desc{
-  font-size: 2rem;
+  font-size: 1rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
