@@ -473,6 +473,28 @@ span{
   transform: translateY(-20px);
 }
 
+.competences div:hover::after{
+  content: attr(data-comp);
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-out;
+}
+
+.competences .item:hover {
+  transform: translateY(-20px);
+}
+
+.competences .item {
+  transition: transform 0.5s ease-out;
+}
+
 /* Style pour le texte du projet qui apparaîtra au survol */
 .projets a:hover::after {
   content: attr(data-projet);
