@@ -180,7 +180,7 @@ h1{
 }
 
 .accueil-txt{
-  font-size: 5rem;
+  font-size: 3rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
@@ -192,18 +192,18 @@ h1{
 }
 
 .accueil-btxt{
-  font-size: 8rem;
+  font-size: 5rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
   display: flex;
-  margin-left:100px;
+  margin-left:110px;
   margin-top: 0;
   text-size-adjust: auto;
 }
 
 .accueil-desc{
-  font-size: 2rem;
+  font-size: 1rem;
   color:white;
   font-weight: bold;
   opacity: 80%;
@@ -215,8 +215,8 @@ h1{
 
 .linkedin{
   opacity: 80%;
-  width: 66px;
-  height: 66px;
+  width: 50px;
+  height: 50px;
   float:right;
   margin-right: 150px;
   margin-top: -250px;
@@ -227,31 +227,81 @@ h1{
   z-index: 3;
 }
 
-@media screen and (max-width: 800px) {
+/* Responsive pour les médias */
+@media screen and (max-width: 820px) {
   .accueil-txt {
-    font-size: 3rem;
+    font-size: 9vw;
+    padding-top: 200px;
+    margin-left:0;
+    margin-bottom: 0;
+    padding-left: 5vw;
   }
-  
   .accueil-btxt {
-    font-size: 6rem;
+    font-size: 9vw;
+    margin-left:0;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
   }
-  
   .accueil-desc {
-    font-size: 1.5rem;
+    font-size: 4vw;
+    margin-left:0;
+    padding-left: 5vw;
+  }
+
+  .linkedin {
+    width: 50px;
+    height: 50px;
+    margin-right: 10vw;
+    margin-top: -15vh;
+  }
+
+  p{
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+    text-align: center;
+    margin: 2vh auto;
   }
 }
 
 @media screen and (max-width: 576px) {
+
   .accueil-txt {
-    font-size: 2rem;
+    font-size: 9vw;
+    padding-top: 200px;
+    margin-left:0;
+    margin-bottom: 0;
+    padding-left: 5vw;
   }
-  
   .accueil-btxt {
-    font-size: 5rem;
+    font-size: 9vw;
+    margin-left:0;
+    padding-bottom: 2vw;
+    padding-left: 5vw;
   }
-  
   .accueil-desc {
-    font-size: 1rem;
+    font-size: 4vw;
+    margin-left:0;
+    padding-left: 5vw;
+  }
+
+  .linkedin {
+    width: 50px;
+    height: 50px;
+    margin-right: 10vw;
+    margin-top: -15vh;
+  }
+
+  p{
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+    text-align: center;
+    margin: 2vh auto;
   }
 }
 
@@ -425,7 +475,7 @@ span{
 }
 
 .competences{
-  margin: 200px;
+  margin-top: 200px;
   text-align: center;
 }
 .galerie {
@@ -457,7 +507,7 @@ span{
 }
 
 .projets{
-  margin: 200px;
+  margin-top: 200px;
   text-align: center;
 }
 
@@ -471,6 +521,28 @@ span{
 
 .projets .item:hover {
   transform: translateY(-20px);
+}
+
+.competences div:hover::after{
+  content: attr(data-comp);
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-out;
+}
+
+.competences .item:hover {
+  transform: translateY(-20px);
+}
+
+.competences .item {
+  transition: transform 0.5s ease-out;
 }
 
 /* Style pour le texte du projet qui apparaîtra au survol */
@@ -510,7 +582,7 @@ span{
 /* experiences */
 
 .experiences{
-  margin: 200px;
+  margin-top: 200px;
   text-align: center;
 }
 
